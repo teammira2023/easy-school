@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        sh '''./mvnw clean compile
-'''
+        sh './python3 manage.py'
       }
     }
 

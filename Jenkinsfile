@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        sh './python3 manage.py'
+        sh './manage.py'
       }
     }
 

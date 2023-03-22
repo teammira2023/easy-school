@@ -6,4 +6,4 @@ docker rmi $(docker images -a -q)
 cd easy-school
 docker-compose build
 docker-compose run web python manage.py createsuperuser
-docker-compose up
+docker-compose up --detach

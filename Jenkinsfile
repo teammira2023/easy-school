@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-pipeline {
+/*pipeline {*/
   node('Dev') {
   stage('Build') {
     sh 'rm -rf easy-school/'
@@ -7,11 +7,11 @@ pipeline {
 		sh 'chmod +x easy-school/runtime.sh'
     sh 'easy-school/runtime.sh'
       }
-    post {
+    /*post {
         always {
             // Set the result of the current build to SUCCESS
             currentBuild.result = 'SUCCESS'
         }
+    }*/
     }
-    }
-)
+/*)*/

@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-        stage('Code Quality Check') {
+    stage('Code Quality Check') {
       steps {
         sh '''sonar-scanner \\
   -Dsonar.projectKey=easy-school \\
@@ -15,6 +15,7 @@ pipeline {
   -Dsonar.login=sqp_e111820a7d7744089b55de30e6d2639800c09646'''
       }
     }
+
     stage('Build') {
       steps {
         sh 'rm -rf easy-school/'

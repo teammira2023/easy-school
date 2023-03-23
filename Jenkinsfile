@@ -24,5 +24,6 @@ pipeline {
         sh 'easy-school/runtime.sh'
       }
     }
+
   }
 }

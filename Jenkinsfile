@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'Dev'
+    }
+
+  }
   stages {
     stage('Code Quality Check') {
       steps {
@@ -10,5 +15,6 @@ pipeline {
   -Dsonar.login=sqp_e111820a7d7744089b55de30e6d2639800c09646'''
       }
     }
+
   }
 }
